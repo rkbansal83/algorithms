@@ -2,6 +2,11 @@ package algos;
 
 import java.util.HashSet;
 
+/**
+ * This class is used to generate all the permutations of given string.
+ * @author RAVI
+ *
+ */
 public class Permutations {
 
 	private static final String EMPTY ="";
@@ -38,3 +43,4 @@ public class Permutations {
 		System.out.println(getPermutations("abc"));
 	}
 	
+}
