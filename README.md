@@ -10,3 +10,5 @@ Anagrams - This program will group togather all the anagrams in the List of Stri
 LowestCommonAncestor  - Logic to find the lowest common ancestor of two given nodes in a binary tree.
 
 BalancedBTree - Logic to check if the given binary tree is balanced or not.
+
+SubsetSum - given a set of positive numbers and a number , determine whether there is any subset whose sum is equal to given number.
