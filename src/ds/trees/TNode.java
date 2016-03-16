@@ -1,6 +1,6 @@
 package ds.trees;
 
-public class TNode<E> {
+public class TNode<E extends Comparable<? super E>> {
 
 	public E data;
     public TNode right;
