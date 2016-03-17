@@ -12,3 +12,5 @@ LowestCommonAncestor  - Logic to find the lowest common ancestor of two given no
 BalancedBTree - Logic to check if the given binary tree is balanced or not.
 
 SubsetSum - given a set of positive numbers and a number , determine whether there is any subset whose sum is equal to given number.
+
+WordBreak- check if a given String can be broken into valid words of dictionary.
