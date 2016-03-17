@@ -15,7 +15,7 @@ public class BST<E  extends Comparable<? super E>> {
 	    if (root==null) {
 	        return new TNode<E>(item, null, null);
 	    }
-	    if (item.compareTo(root.data)<0) {        // ERROR HERE
+	    if (item.compareTo(root.data)<0) {       
 	       	root.left = add( item,root.left);
 	    }
 	    else {
