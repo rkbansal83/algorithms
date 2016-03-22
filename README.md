@@ -16,3 +16,5 @@ SubsetSum - given a set of positive numbers and a number , determine whether the
 WordBreak- check if a given String can be broken into valid words of dictionary.
 
 BalancedBST- create a balanced BST from sorted input array.
+
+CommonElementsSortedArrays - Searches the common elements among the multiple arrays which are presorted.
