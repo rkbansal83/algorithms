@@ -18,3 +18,7 @@ WordBreak- check if a given String can be broken into valid words of dictionary.
 BalancedBST- create a balanced BST from sorted input array.
 
 CommonElementsSortedArrays - Searches the common elements among the multiple arrays which are presorted.
+
+ZeroMatrix - If an element in matrix M*N is zero ,then set an entire row and column to be 0.
+
+ValidateBST - Check if the given binary tree is binary search Tree.
