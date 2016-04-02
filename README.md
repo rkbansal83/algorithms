@@ -22,3 +22,7 @@ CommonElementsSortedArrays - Searches the common elements among the multiple arr
 ZeroMatrix - If an element in matrix M*N is zero ,then set an entire row and column to be 0.
 
 ValidateBST - Check if the given binary tree is binary search Tree.
+
+SearchInRotatedSorted - Search a given element in sorted rotated array.
+
+CompressString - Compress a given string "aabbbccc" to "a2b3c3" 
