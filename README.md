@@ -26,3 +26,5 @@ ValidateBST - Check if the given binary tree is binary search Tree.
 SearchInRotatedSorted - Search a given element in sorted rotated array.
 
 CompressString - Compress a given string "aabbbccc" to "a2b3c3" 
+
+Binary Min Heap - Min Heap Insertion and Removal.
