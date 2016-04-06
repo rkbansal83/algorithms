@@ -28,3 +28,7 @@ SearchInRotatedSorted - Search a given element in sorted rotated array.
 CompressString - Compress a given string "aabbbccc" to "a2b3c3" 
 
 Binary Min Heap - Min Heap Insertion and Removal.
+
+RemoveDuplicatesFromSorted - Dedupes the sorted array.  It doesn't matter what you leave beyond the new length.
+
+ReverseSWords- Reverse the order of words in the string . 
