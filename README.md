@@ -32,3 +32,7 @@ Binary Min Heap - Min Heap Insertion and Removal.
 RemoveDuplicatesFromSorted - Dedupes the sorted array.  It doesn't matter what you leave beyond the new length.
 
 ReverseSWords- Reverse the order of words in the string . 
+
+SubStringSearchBruteForce - Check if given string has substring (Brute Force Method).
+
+IntersectionSortedLists - To find the common elements among two sorted lists (lists are of same size, so binary search is not used).
