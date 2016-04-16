@@ -3,6 +3,8 @@ package algos;
 import java.util.ArrayList;
 import java.util.List;
 
+import ds.heaps.BinaryMinHeap;
+
 public class MergeSortedArrays {
 	
 	public static void main(String[] args) {

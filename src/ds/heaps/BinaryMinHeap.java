@@ -1,4 +1,4 @@
-package algos;
+package ds.heaps;
 
 public class BinaryMinHeap<T extends Comparable<T>> {
 	
