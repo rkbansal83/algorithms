@@ -3,20 +3,28 @@ package algos;
 /**
  * Given a sorted array, remove the duplicates in place such that each element
  * appear only once and return the new length in O(1) complexity.
+ * For example, if the input array is {1, 2, 2, 3, 4}, the array will be changed to {1, 2, 3, 4, 3}.
  */
 
 public class RemoveDuplicatesFromSortedArray {
 
-	public int removeDuplicates(int[] nums) {
-		if (nums.length == 0)
-			return 0;
-		int i = 0;
-		for (int j = 1; j < nums.length; j++) {
-			if (nums[j] != nums[i]) {
+	public int removeDuplicates(int[] A) {
+		if (A.length < 2)
+			return A.length;
+	 
+		int j = 0;
+		int i = 1;
+	 
+		while (i < A.length) {
+			if (A[i] == A[j]) {
 				i++;
-				nums[i] = nums[j];
+			} else {
+				j++;
+				A[j] = A[i];
+				i++;
 			}
 		}
-		return i + 1;
+	 
+		return j + 1;
 	}
 }
