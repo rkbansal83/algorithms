@@ -90,8 +90,8 @@ public class RectangularPreetyPrint {
 		 
 	 }
 	 public static void main(String[] args) {
-		 int A = 3;
-		 display(prettyPrint(3));
+		 int A = 4;
+		 display(prettyPrint(A));
 		 
 	 }
 	 
