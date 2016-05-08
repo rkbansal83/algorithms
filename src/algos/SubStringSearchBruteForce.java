@@ -23,7 +23,7 @@ public class SubStringSearchBruteForce {
 			return subIndex;
 		
 		int j;
-		for(int i=0;i<inLen-pLen;i++)
+		for(int i=0;i<=inLen-pLen;i++)
 		{
 			for(j=0;j<pLen;j++) {
 				if(input.charAt(i+j)!=pattern.charAt(j))
