@@ -23,37 +23,36 @@ The answer is [1, 2, 5] as its sum is larger than [2, 3]
 public class MaxPositiveSubArray {
 	public static ArrayList<Integer> findMaxPositiveSubArray(List<Integer> a) {
 	    
-	    ArrayList<Integer> result = new ArrayList<Integer>();
-		ArrayList<Integer> interimResult = new ArrayList<Integer>();
-		int currSum=0;
-		int maxSumSoFar =0;
-
-		
-		for(int i=0;i<a.size();i++) {
-			
-			if(a.get(i)>=0){
-				currSum = currSum + a.get(i);
-				if(currSum<0)
-					currSum = Integer.MAX_VALUE;
-				
-				interimResult.add(a.get(i));
-			}
-			
-			else{
-				if(currSum>maxSumSoFar || (currSum==maxSumSoFar && interimResult.size()>result.size())) {
-					maxSumSoFar = currSum;
-					result= interimResult;
-				}
-				currSum=0;
-				interimResult=new ArrayList<Integer>();
-			}
-			
-			if(currSum>maxSumSoFar || (currSum==maxSumSoFar && interimResult.size()>result.size())) {
-				result= interimResult;
-			}
-		}
-		
-		return result;
+	    int curr_sum=0, max_sum=0;
+	    ArrayList<Integer> interimList = new ArrayList<Integer>(); 
+	    ArrayList<Integer> res = new ArrayList<Integer>();
+	    
+	    for(int i=0;i<a.size();i++) {
+	            
+	        if(a.get(i)>=0) {
+	            
+	            curr_sum = curr_sum+a.get(i);
+	            
+	            if(curr_sum<0) {
+	                curr_sum = Integer.MAX_VALUE;
+	            
+	            }
+	            interimList.add(a.get(i));
+	        }
+	        
+	         if(curr_sum>max_sum || (curr_sum==max_sum && res.size()<interimList.size() )) {
+	                
+	                max_sum = curr_sum;
+	                res = interimList;
+	            }
+	        if(a.get(i)<0) {
+	       
+	            curr_sum=0;
+	            interimList = new ArrayList<Integer>();
+	        }
+	    }
+	    
+	    return res;
 	}
 	
 	public static void main(String[] args) {
