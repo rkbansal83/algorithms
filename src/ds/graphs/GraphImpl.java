@@ -4,11 +4,14 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Stack;
 
 public class GraphImpl<V> extends BaseGraph<V>{
 	
 	private Map<V,List<V>> adjList ;
-	public GraphImpl() {
+	
+	
+    public GraphImpl() {
 			 adjList = new HashMap<V,List<V>>();
 	}
 	//add the vertex
@@ -51,7 +54,22 @@ public class GraphImpl<V> extends BaseGraph<V>{
         adjList.get(from).remove(to);
     }
     
-    
+    public  ArrayList<V> dfs(V sourceVertex) {
+        ArrayList<V> result = new ArrayList<V>();
+        ArrayList<V> visited = new ArrayList<V>();
+        Stack<V> stack = new Stack<V>();
+        stack.push(sourceVertex);
+        while(!stack.isEmpty()) {
+            V elem = stack.pop();
+            if(!visited.contains(elem)) {
+                result.add(elem);
+                for(V neighbor:adjList.get(elem))
+                    stack.push(neighbor);
+                      visited.add(elem);
+            }
+        }
+        return result;
+     }
 
     public static void main (String[] args) {
         // Create a Graph with Integer nodes
