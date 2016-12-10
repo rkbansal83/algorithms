@@ -2,8 +2,10 @@ package ds.graphs;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
+import java.util.Queue;
 import java.util.Stack;
 
 public class GraphImpl<V> extends BaseGraph<V>{
@@ -65,7 +67,24 @@ public class GraphImpl<V> extends BaseGraph<V>{
                 result.add(elem);
                 for(V neighbor:adjList.get(elem))
                     stack.push(neighbor);
-                      visited.add(elem);
+                visited.add(elem);
+            }
+        }
+        return result;
+     }
+    
+    public  ArrayList<V> bfs(V sourceVertex) {
+        ArrayList<V> result = new ArrayList<V>();
+        ArrayList<V> visited = new ArrayList<V>();
+        Queue<V> queue = new LinkedList<V>();
+        queue.add(sourceVertex);
+        while(!queue.isEmpty()) {
+            V elem = queue.poll();
+            if(!visited.contains(elem)) {
+                result.add(elem);
+                for(V neighbor:adjList.get(elem))
+                    queue.add(neighbor);
+                visited.add(elem);
             }
         }
         return result;
